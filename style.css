@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
 
+/* siga as ordens como as classes, ids e tags aparecem no html */
+
 body{
     background-image: url("img/pexels-photo-457882.jpeg");
     background-repeat: no-repeat;
@@ -7,7 +9,10 @@ body{
 }   
 
 .login {
-    
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 40px;
 }
 
 .login a{
@@ -16,11 +21,81 @@ body{
     font-size: 35px;
     font-family: "Sedan", serif;
     font-weight: 400;
-    font-style: normal;
+    background-color: #303641;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 15px;
     
 }
 
 .infos {
-    color: rgb(111, 38, 38);
+    color: #F2EFDF;
     font-weight: bold;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #303641;
+    font-family: "Sedan", serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.infos p{
+    font-size: 30px;
+    color: #303641;
+    text-transform: uppercase;
+    font-family: "Sedan", serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+#inputNome{
+    width: 550px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+#inputEmail{
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.botaoLogin{
+    width: 200px;
+    color: #7B2C57;
+    background-color: #59A656;
+    border-radius: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-style: none;
+    height: 40px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.entrarEmail{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.socialIcons{
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
+.socialIcons img{
+    width: 40px;
 }
